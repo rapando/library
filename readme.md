@@ -15,3 +15,11 @@ It does the following,
 - publishes some data to a messaging queue e.g. in order to send notifications. The consumer will be a separate Java app.
 
 ---
+To run the application
+
+1. Install Java 19 and Maven
+2. Install Postman
+3. Set `library` as `http://localhost:3000/api/v1 in your Postman environment
+4. Import the postman collection
+5. Create a database `library` (MariaDB)
+6. Run the application

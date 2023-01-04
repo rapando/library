@@ -1,5 +1,7 @@
-package ke.innv8.library.category;
+package ke.innv8.library.service;
 
+import ke.innv8.library.entity.Category;
+import ke.innv8.library.repository.CategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

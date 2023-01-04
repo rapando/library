@@ -1,6 +1,8 @@
-package ke.innv8.library.category;
+package ke.innv8.library.controller;
 
 import com.smattme.requestvalidator.RequestValidator;
+import ke.innv8.library.service.CategoryService;
+import ke.innv8.library.entity.Category;
 import ke.innv8.library.response.GenericResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
