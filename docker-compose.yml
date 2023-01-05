@@ -1,6 +1,14 @@
 version: '3'
 
 services:
+  db:
+    image: mariadb:10.9.4
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=library
+    expose:
+      - 3306
+
   library:
     build: .
     restart: unless-stopped
@@ -10,10 +18,4 @@ services:
     ports:
       - "12003:12003"
 
-  db:
-    image: mariadb:10.9.4
-    environment:
-      - MYSQL_ROOT_PASSWORD=password
-      - MYSQL_DATABASE=library
-    expose:
-      - 3306
+
