@@ -4,6 +4,16 @@ services:
   library:
     build: .
     restart: unless-stopped
-    network_mode: host
+    network_mode: bridge
+    depends_on:
+      - db
+    ports:
+      - "12003:12003"
+
+  db:
+    image: mariadb:10.9.4
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=library
     expose:
-      - 12003
+      - 3306
