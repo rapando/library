@@ -17,6 +17,11 @@ It does the following,
 ---
 To run the application
 
+```shell
+cp src/main/resources/sample.application.properties src/main/resources/application.properties
+
+```
+
 1. Install Java 19 and Maven
 2. Install Postman
 3. Set `library` as `http://localhost:3000/api/v1 in your Postman environment
